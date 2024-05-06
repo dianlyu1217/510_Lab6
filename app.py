@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 
 load_dotenv()
 
-genai.configure(api_key="AIzaSyCDvOMMRQmezW541JFrf5m_l4F2a4fNaAw")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-pro')
 conversation = []
 
