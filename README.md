@@ -1,16 +1,33 @@
-# 510_Lab6
+# 510_lab6
 
-How to Run
-Open the terminal and run the following commands: python -m venv venv source venv/bin/activate pip install -r requirements.txt streamlit run app.py
+# How to Run
+Open the terminal and run the following commands:
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
 
-What's include
-app.py - main running application.
-.gitignore - tells Git which files or directories to ignore in a project.
-requirements.txt - list all the dependencies that the project needs to run correctly.
-README.md - includes the text info of the basic introduction of this GitHub Repository, how to run, what's included, lessons learned, questions / uncertainties.
+# What's include
+app.py - main running application.  
+.gitignore - tells Git which files or directories to ignore in a project.  
+requirements.txt - list all the dependencies that the project needs to run correctly.  
+README.md - includes the text info of the basic introduction of this GitHub Repository, how to run, what's included, lessons learned, questions / uncertainties.  
 
-Lesson Learned
-API Utilization and Application Development: Learning how to obtain and use an API key, such as obtaining an API key from Google AI Studio, is a crucial step when developing applications that rely on external data or functionalities. Building Interactive Applications with Streamlit: The course introduces the concept of creating interactive applications using Streamlit, showcasing how to integrate APIs like the Gemini API for building practical tools such as a resume coach or a travel planner. Front-End Web Development Basics: It covers the fundamentals of creating a web application using only HTML, CSS, and JavaScript. This includes building a simple Todo app, teaching basic but essential web development skills and deployment on platforms like GitHub Pages. Data Visualization and Local Data Integration: The course involves working with specific datasets, like event data from Seattle, to create interactive visualizations. This includes handling various data aspects like event categories, locations, and associated weather conditions.
+# Lesson Learned
 
-questions
-How does Streamlit handle asynchronous API calls, particularly when integrating APIs like Gemini in an application that requires real-time data processing and display? What are the best practices to ensure responsive and efficient data handling within a Streamlit app?
+Nature and Function of Large Language Models (LLMs):
+LLMs are AI models that process and generate human-like text by learning from vast amounts of data. They use deep learning techniques and are trained on diverse datasets to understand a wide range of topics and styles. Their applications include translation, summarization, content creation, and more.
+Transformer Architecture and Self-Attention Mechanism:
+LLMs utilize transformer architecture, which helps the model weigh the importance of different words for understanding context and generating responses. The self-attention mechanism within transformers allows the model to focus on different parts of the input text, aiding in the generation of coherent and contextually appropriate text.
+Tokenization and Embeddings:
+Input text is broken down into smaller units called tokens, which can include words, parts of words, or punctuation. These tokens are then converted into numerical vectors using embeddings, which help capture the semantic and syntactic meanings of words and make the textual information processable by the model.
+Applications and Limitations of LLMs:
+LLMs are versatile in handling various NLP tasks like Named Entity Recognition (NER), classification, and creative content generation. However, they also have limitations such as generating hallucinated (incorrect or misleading) content, dealing with a limited context window, and high operational costs.
+Alternative Solutions and Techniques for Overcoming Limitations:
+For sensitive data or specific tasks, alternatives to proprietary LLMs like open-source models (e.g., Llama family) and traditional NLP tools (e.g., NLTK, SpaCy) are available. Techniques such as prompt engineering, Retrieval Augmented Generation (RAG), and fine-tuning are useful for enhancing the performance of LLMs and mitigating their limitations.
+
+
+# questions
+When using large language models (LLMs) for text generation, we often face issues with the authenticity and accuracy of the generated content, referred to as 'hallucinations.' To reduce the occurrence of these issues and improve the credibility of the text, how can we more effectively use prompt engineering and Retrieval Augmented Generation (RAG) techniques? What are the limitations and challenges of these techniques in practical applications?
+
+
